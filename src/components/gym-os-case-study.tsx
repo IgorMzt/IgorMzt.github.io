@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowIcon } from "@/components/arrow-icon";
 
 const features = [
   "Cadastro e gerenciamento de alunos",
@@ -15,12 +16,12 @@ const technologies = ["Python", "Flask", "PostgreSQL", "SQLite", "HTML", "CSS", 
 export function GymOSCaseStudy() {
   return <main id="conteudo" className="case-study gym-case">
     <div className="container">
-      <Link className="back-link" href="/#projetos">← Voltar aos projetos</Link>
+      <Link className="back-link" href="/#projetos"><ArrowIcon direction="left" /> Voltar aos projetos</Link>
       <header className="case-hero">
         <p className="eyebrow">02 / GESTÃO · PLATAFORMA WEB</p>
         <h1>Gym OS<span>.</span></h1>
         <p>Um sistema de gestão de academias que conecta a operação administrativa ao controle de acesso e aos pagamentos.</p>
-        <a className="button button-primary case-repo-link" href="https://github.com/IgorMzt/Gym-Os" target="_blank" rel="noopener noreferrer">Ver repositório no GitHub <span aria-hidden="true">↗</span></a>
+        <a className="button button-primary case-repo-link" href="https://github.com/IgorMzt/Gym-Os" target="_blank" rel="noopener noreferrer">Ver repositório no GitHub <span aria-hidden="true"><ArrowIcon /></span></a>
       </header>
 
       <div className="gym-case-visual" aria-hidden="true"><span className="gym-case-label">GYM OS / 02</span><div className="gym-case-symbol"><span>G</span></div><span className="gym-case-caption">GESTÃO · ACESSO · FINANCEIRO</span></div>
@@ -57,10 +58,10 @@ export function GymOSCaseStudy() {
 
       <section className="case-section case-two-columns" aria-labelledby="gym-result-title">
         <div><p className="eyebrow">RESULTADO</p><h2 id="gym-result-title">Módulos integrados, evolução incremental.</h2></div>
-        <div className="case-prose"><p>Um fluxo reúne cadastro do aluno, verificação de acesso e acompanhamento administrativo. A arquitetura documentada separa rotas, serviços, dados e o agente local de acesso.</p><p>Em uma etapa anterior de validação, <strong>64 testes automatizados passaram</strong>. A contagem representa aquela etapa do desenvolvimento.</p><a className="text-link" href="https://github.com/IgorMzt/Gym-Os" target="_blank" rel="noopener noreferrer">Explorar o código no GitHub <span aria-hidden="true">↗</span></a></div>
+        <div className="case-prose"><p>Um fluxo reúne cadastro do aluno, verificação de acesso e acompanhamento administrativo. A arquitetura documentada separa rotas, serviços, dados e o agente local de acesso.</p><p>Em uma etapa anterior de validação, <strong>64 testes automatizados passaram</strong>. A contagem representa aquela etapa do desenvolvimento.</p><a className="text-link" href="https://github.com/IgorMzt/Gym-Os" target="_blank" rel="noopener noreferrer">Explorar o código no GitHub <span aria-hidden="true"><ArrowIcon /></span></a></div>
       </section>
 
-      <Link className="back-link" href="/#projetos">← Todos os projetos</Link>
+      <Link className="back-link" href="/#projetos"><ArrowIcon direction="left" /> Todos os projetos</Link>
     </div>
   </main>;
 }

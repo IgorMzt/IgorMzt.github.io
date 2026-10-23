@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowIcon } from "@/components/arrow-icon";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
@@ -93,7 +94,7 @@ export function SiteHeader() {
         </div>
       </div>
       <nav ref={menuRef} id="mobile-menu" className="mobile-menu" aria-label="Navegação mobile" hidden={!menuOpen}>
-        {links.map((link) => <Link key={link.href} href={link.href} aria-current={pathname === "/" && activeSection === link.id ? "location" : undefined} onClick={() => setMenuOpen(false)}><small>{link.number}</small>{link.label}<span aria-hidden="true">↗</span></Link>)}
+        {links.map((link) => <Link key={link.href} href={link.href} aria-current={pathname === "/" && activeSection === link.id ? "location" : undefined} onClick={() => setMenuOpen(false)}><small>{link.number}</small>{link.label}<span aria-hidden="true"><ArrowIcon /></span></Link>)}
       </nav>
     </header>
   );

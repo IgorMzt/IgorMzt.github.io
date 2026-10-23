@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowIcon } from "@/components/arrow-icon";
 
 const features = [
   "Importação e diagnóstico de arquivos CSV e Excel",
@@ -16,12 +17,12 @@ const technologies = ["Python", "Flask", "Pandas", "NumPy", "SQLAlchemy", "SQLit
 export function DataVisionCaseStudy() {
   return <main id="conteudo" className="case-study datavision-case">
     <div className="container">
-      <Link className="back-link" href="/#projetos">← Voltar aos projetos</Link>
+      <Link className="back-link" href="/#projetos"><ArrowIcon direction="left" /> Voltar aos projetos</Link>
       <header className="case-hero">
         <p className="eyebrow">01 / DADOS · PLATAFORMA WEB</p>
         <h1>DataVision<span>.</span></h1>
         <p>Uma plataforma de análise de dados que transforma arquivos tabulares em indicadores e painéis interativos.</p>
-        <a className="button button-primary case-repo-link" href="https://github.com/IgorMzt/DataVision" target="_blank" rel="noopener noreferrer">Ver repositório no GitHub <span aria-hidden="true">↗</span></a>
+        <a className="button button-primary case-repo-link" href="https://github.com/IgorMzt/DataVision" target="_blank" rel="noopener noreferrer">Ver repositório no GitHub <span aria-hidden="true"><ArrowIcon /></span></a>
       </header>
 
       <figure className="case-image case-image-hero">
@@ -61,8 +62,8 @@ export function DataVisionCaseStudy() {
 
       <figure className="case-image case-image-wide"><Image src="/images/datavision/dashboard.jpg" alt="Painel do DataVision com indicadores de transações e gráficos de distribuição por status e valor por produto" width={1280} height={720} sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption>Painel analítico com dados financeiros simulados.</figcaption></figure>
 
-      <section className="case-section case-two-columns" aria-labelledby="result-title"><div><p className="eyebrow">RESULTADO E VALIDAÇÃO</p><h2 id="result-title">Do diagnóstico aos sinais investigáveis.</h2></div><div className="case-prose"><p>Com os dados financeiros simulados, a plataforma apresenta qualidade dos registros, distribuição de transações por status e valor por produto. A lista de anomalias destaca operações fora do padrão para investigação, sem classificá-las automaticamente como fraude.</p><p>O repositório inclui testes automatizados para componentes do processamento, da análise e das rotas principais. O projeto reúne preparação, exploração e visualização em um fluxo modular.</p><a className="text-link" href="https://github.com/IgorMzt/DataVision" target="_blank" rel="noopener noreferrer">Explorar o código no GitHub <span aria-hidden="true">↗</span></a></div></section>
-      <Link className="back-link" href="/#projetos">← Todos os projetos</Link>
+      <section className="case-section case-two-columns" aria-labelledby="result-title"><div><p className="eyebrow">RESULTADO E VALIDAÇÃO</p><h2 id="result-title">Do diagnóstico aos sinais investigáveis.</h2></div><div className="case-prose"><p>Com os dados financeiros simulados, a plataforma apresenta qualidade dos registros, distribuição de transações por status e valor por produto. A lista de anomalias destaca operações fora do padrão para investigação, sem classificá-las automaticamente como fraude.</p><p>O repositório inclui testes automatizados para componentes do processamento, da análise e das rotas principais. O projeto reúne preparação, exploração e visualização em um fluxo modular.</p><a className="text-link" href="https://github.com/IgorMzt/DataVision" target="_blank" rel="noopener noreferrer">Explorar o código no GitHub <span aria-hidden="true"><ArrowIcon /></span></a></div></section>
+      <Link className="back-link" href="/#projetos"><ArrowIcon direction="left" /> Todos os projetos</Link>
     </div>
   </main>;
 }
