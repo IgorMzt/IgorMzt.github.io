@@ -31,3 +31,4 @@ O workflow define `NEXT_PUBLIC_SITE_URL=https://igormzt.github.io` para os metad
 - Projetos em destaque: `src/components/project-card.tsx`.
 - Estudos de caso: `src/components/datavision-case-study.tsx` e `src/components/gym-os-case-study.tsx`.
 - Imagens do DataVision: `public/images/datavision/`.
+- Currículos em PDF: `public/curriculos/`. Mantenha os nomes dos arquivos ao atualizar as versões para preservar os links da página de contato.

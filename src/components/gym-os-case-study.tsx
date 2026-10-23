@@ -58,7 +58,7 @@ export function GymOSCaseStudy() {
 
       <section className="case-section case-two-columns" aria-labelledby="gym-result-title">
         <div><p className="eyebrow">RESULTADO</p><h2 id="gym-result-title">Módulos integrados, evolução incremental.</h2></div>
-        <div className="case-prose"><p>Um fluxo reúne cadastro do aluno, verificação de acesso e acompanhamento administrativo. A arquitetura documentada separa rotas, serviços, dados e o agente local de acesso.</p><p>Em uma etapa anterior de validação, <strong>64 testes automatizados passaram</strong>. A contagem representa aquela etapa do desenvolvimento.</p><a className="text-link" href="https://github.com/IgorMzt/Gym-Os" target="_blank" rel="noopener noreferrer">Explorar o código no GitHub <span aria-hidden="true"><ArrowIcon /></span></a></div>
+        <div className="case-prose"><p>Um fluxo reúne cadastro do aluno, verificação de acesso e acompanhamento administrativo. A arquitetura documentada separa rotas, serviços, dados e o agente local de acesso.</p><p>Na validação da versão 6.0.0, <strong>82 testes automatizados passaram</strong>.</p><a className="text-link" href="https://github.com/IgorMzt/Gym-Os" target="_blank" rel="noopener noreferrer">Explorar o código no GitHub <span aria-hidden="true"><ArrowIcon /></span></a></div>
       </section>
 
       <Link className="back-link" href="/#projetos"><ArrowIcon direction="left" /> Todos os projetos</Link>
